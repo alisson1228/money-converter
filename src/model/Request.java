@@ -1,6 +1,8 @@
 package model;
 
 import com.google.gson.Gson;
+import record.APICover;
+import record.APIValue;
 
 import java.io.IOException;
 import java.net.URI;
