@@ -13,17 +13,9 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Request {
-    private String key;
+    private final String key;
 
     public Request(String key) {
-        this.key = key;
-    }
-
-    public String getKey() {
-        return key;
-    }
-
-    public void setKey(String key) {
         this.key = key;
     }
 
@@ -58,7 +50,7 @@ public class Request {
     }
 
     public double cover(String origin, String objective, double value) {
-        String rota = "/pair/" + origin + "/" + objective + "/" + Double.toString(value);
+        String rota = "/pair/" + origin + "/" + objective + "/" + value;
 
         HttpClient client = HttpClient.newHttpClient();
         Gson gson = new Gson();
