@@ -1,4 +1,3 @@
-import com.google.gson.Gson;
 import model.Code;
 import model.Request;
 
@@ -8,12 +7,11 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         String key = "ab3429d80811b8632cd5696b";
-        ArrayList<Code> codes = new ArrayList<Code>();
 
         Scanner scan = new Scanner(System.in);
         Request request = new Request(key);
 
-        codes = request.cods();
+        ArrayList<Code> codes = request.cods();
 
         System.out.println("Tipos de opções:");
 
